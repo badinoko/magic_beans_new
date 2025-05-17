@@ -1,0 +1,772 @@
+PS C:\Users\Buddy\magic_beans_project\magic_beans_new> docker compose -f docker-compose.local.yml logs -f django
+magicbeans_local_django  | wait-for-it: waiting 30 seconds for postgres:5432
+magicbeans_local_django  | wait-for-it: postgres:5432 is available after 1 seconds
+magicbeans_local_django  | PostgreSQL is available
+magicbeans_local_django  | Operations to perform:
+magicbeans_local_django  |   Apply all migrations: account, admin, auth, contenttypes, django_celery_beat, mfa, sessions, sites, socialaccount, users
+magicbeans_local_django  | Running migrations:
+magicbeans_local_django  |   Applying contenttypes.0001_initial... OK
+magicbeans_local_django  |   Applying contenttypes.0002_remove_content_type_name... OK
+magicbeans_local_django  |   Applying auth.0001_initial... OK
+magicbeans_local_django  |   Applying auth.0002_alter_permission_name_max_length... OK
+magicbeans_local_django  |   Applying auth.0003_alter_user_email_max_length... OK
+magicbeans_local_django  |   Applying auth.0004_alter_user_username_opts... OK
+magicbeans_local_django  |   Applying auth.0005_alter_user_last_login_null... OK
+magicbeans_local_django  |   Applying auth.0006_require_contenttypes_0002... OK
+magicbeans_local_django  |   Applying auth.0007_alter_validators_add_error_messages... OK
+magicbeans_local_django  |   Applying auth.0008_alter_user_username_max_length... OK
+magicbeans_local_django  |   Applying auth.0009_alter_user_last_name_max_length... OK
+magicbeans_local_django  |   Applying auth.0010_alter_group_name_max_length... OK
+magicbeans_local_django  |   Applying auth.0011_update_proxy_permissions... OK
+magicbeans_local_django  |   Applying auth.0012_alter_user_first_name_max_length... OK
+magicbeans_local_django  |   Applying users.0001_initial... OK
+magicbeans_local_django  |   Applying account.0001_initial... OK
+magicbeans_local_django  |   Applying account.0002_email_max_length... OK
+magicbeans_local_django  |   Applying account.0003_alter_emailaddress_create_unique_verified_email... OK
+magicbeans_local_django  |   Applying account.0004_alter_emailaddress_drop_unique_email... OK
+magicbeans_local_django  |   Applying account.0005_emailaddress_idx_upper_email... OK
+magicbeans_local_django  |   Applying account.0006_emailaddress_lower... OK
+magicbeans_local_django  |   Applying account.0007_emailaddress_idx_email... OK
+magicbeans_local_django  |   Applying account.0008_emailaddress_unique_primary_email_fixup... OK
+magicbeans_local_django  |   Applying account.0009_emailaddress_unique_primary_email... OK
+magicbeans_local_django  |   Applying admin.0001_initial... OK
+magicbeans_local_django  |   Applying admin.0002_logentry_remove_auto_add... OK
+magicbeans_local_django  |   Applying admin.0003_logentry_add_action_flag_choices... OK
+magicbeans_local_django  |   Applying django_celery_beat.0001_initial... OK
+magicbeans_local_django  |   Applying django_celery_beat.0002_auto_20161118_0346... OK
+magicbeans_local_django  |   Applying django_celery_beat.0003_auto_20161209_0049... OK
+magicbeans_local_django  |   Applying django_celery_beat.0004_auto_20170221_0000... OK
+magicbeans_local_django  |   Applying django_celery_beat.0005_add_solarschedule_events_choices... OK
+magicbeans_local_django  |   Applying django_celery_beat.0006_auto_20180322_0932... OK
+magicbeans_local_django  |   Applying django_celery_beat.0007_auto_20180521_0826... OK
+magicbeans_local_django  |   Applying django_celery_beat.0008_auto_20180914_1922... OK
+magicbeans_local_django  |   Applying django_celery_beat.0006_auto_20180210_1226... OK
+magicbeans_local_django  |   Applying django_celery_beat.0006_periodictask_priority... OK
+magicbeans_local_django  |   Applying django_celery_beat.0009_periodictask_headers... OK
+magicbeans_local_django  |   Applying django_celery_beat.0010_auto_20190429_0326... OK
+magicbeans_local_django  |   Applying django_celery_beat.0011_auto_20190508_0153... OK
+magicbeans_local_django  |   Applying django_celery_beat.0012_periodictask_expire_seconds... OK
+magicbeans_local_django  |   Applying django_celery_beat.0013_auto_20200609_0727... OK
+magicbeans_local_django  |   Applying django_celery_beat.0014_remove_clockedschedule_enabled... OK
+magicbeans_local_django  |   Applying django_celery_beat.0015_edit_solarschedule_events_choices... OK
+magicbeans_local_django  |   Applying django_celery_beat.0016_alter_crontabschedule_timezone... OK
+magicbeans_local_django  |   Applying django_celery_beat.0017_alter_crontabschedule_month_of_year... OK
+magicbeans_local_django  |   Applying django_celery_beat.0018_improve_crontab_helptext... OK
+magicbeans_local_django  |   Applying django_celery_beat.0019_alter_periodictasks_options... OK
+magicbeans_local_django  |   Applying mfa.0001_initial... OK
+magicbeans_local_django  |   Applying mfa.0002_authenticator_timestamps... OK
+magicbeans_local_django  |   Applying mfa.0003_authenticator_type_uniq... OK
+magicbeans_local_django  |   Applying sessions.0001_initial... OK
+magicbeans_local_django  |   Applying sites.0001_initial... OK
+magicbeans_local_django  |   Applying sites.0002_alter_domain_unique... OK
+magicbeans_local_django  |   Applying sites.0003_set_site_domain_and_name... OK
+magicbeans_local_django  |   Applying sites.0004_alter_options_ordering_domain... OK
+magicbeans_local_django  |   Applying socialaccount.0001_initial... OK
+magicbeans_local_django  |   Applying socialaccount.0002_token_max_lengths... OK
+magicbeans_local_django  |   Applying socialaccount.0003_extra_data_default_dict... OK
+magicbeans_local_django  |   Applying socialaccount.0004_app_provider_id_settings... OK
+magicbeans_local_django  |   Applying socialaccount.0005_socialtoken_nullable_app... OK
+magicbeans_local_django  |   Applying socialaccount.0006_alter_socialaccount_extra_data... OK
+magicbeans_local_django  | INFO:     Will watch for changes in these directories: ['/app']
+magicbeans_local_django  | INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+magicbeans_local_django  | INFO:     Started reloader process [1] using WatchFiles
+magicbeans_local_django  | INFO:     Started server process [23]
+magicbeans_local_django  | INFO:     Waiting for application startup.
+magicbeans_local_django  | INFO:     ASGI 'lifespan' protocol appears unsupported.
+magicbeans_local_django  | INFO:     Application startup complete.
+magicbeans_local_django  | INFO:     172.18.0.1:38614 - "GET /admin/ HTTP/1.1" 302 Found
+magicbeans_local_django  | INFO:     172.18.0.1:38614 - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 OK
+magicbeans_local_django  | INFO:     172.18.0.1:38614 - "GET /static/admin/css/base.css HTTP/1.1" 200 OK
+magicbeans_local_django  | /usr/local/lib/python3.12/site-packages/django/http/response.py:517: Warning: StreamingHttpResponse must consume synchronous iterators in order to serve them asynchronously. Use an asynchronous iterator instead.
+magicbeans_local_django  |   warnings.warn(
+magicbeans_local_django  | INFO:     172.18.0.1:38626 - "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 OK
+magicbeans_local_django  | INFO:     172.18.0.1:38638 - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 OK
+magicbeans_local_django  | INFO:     172.18.0.1:38648 - "GET /static/admin/css/login.css HTTP/1.1" 200 OK
+magicbeans_local_django  | INFO:     172.18.0.1:38656 - "GET /static/admin/css/responsive.css HTTP/1.1" 200 OK
+magicbeans_local_django  | INFO:     172.18.0.1:38668 - "GET /static/admin/js/theme.js HTTP/1.1" 200 OK
+magicbeans_local_django  | INFO:     172.18.0.1:38614 - "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 OK
+magicbeans_local_django  | INFO:     172.18.0.1:38626 - "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 OK
+magicbeans_local_django  | INFO:     172.18.0.1:38626 - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 OK
+magicbeans_local_django  | INFO:     172.18.0.1:38614 - "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 OK
+magicbeans_local_django  | INFO:     172.18.0.1:38626 - "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 OK
+magicbeans_local_django  | Not Found: /favicon.ico
+magicbeans_local_django  | WARNING 2025-05-17 10:51:29,408 log 23 139779583645376 Not Found: /favicon.ico
+magicbeans_local_django  | INFO:     172.18.0.1:38626 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+magicbeans_local_django  | INFO:     172.18.0.1:38626 - "POST /admin/login/?next=/admin/ HTTP/1.1" 200 OK
+magicbeans_local_django  | INFO:     172.18.0.1:38626 - "GET /static/admin/css/base.css HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:38656 - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:38638 - "GET /static/admin/css/responsive.css HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:38648 - "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:38668 - "GET /static/admin/js/theme.js HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:38614 - "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:38626 - "GET /static/admin/css/login.css HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:38638 - "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:38638 - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:38626 - "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:38614 - "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:37368 - "POST /admin/login/?next=/admin/ HTTP/1.1" 302 Found
+magicbeans_local_django  | INFO:     172.18.0.1:37368 - "GET /admin/ HTTP/1.1" 200 OK
+magicbeans_local_django  | INFO:     172.18.0.1:37368 - "GET /static/admin/css/base.css HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:37384 - "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:37392 - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:37398 - "GET /static/admin/js/theme.js HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:37426 - "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:37412 - "GET /static/admin/css/responsive.css HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:37368 - "GET /static/admin/css/dashboard.css HTTP/1.1" 200 OK
+magicbeans_local_django  | INFO:     172.18.0.1:37392 - "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:37426 - "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:37412 - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:37412 - "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 OK
+magicbeans_local_django  | INFO:     172.18.0.1:37426 - "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 OK
+magicbeans_local_django  | INFO:     172.18.0.1:37426 - "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:44044 - "GET /admin/users/user/add/ HTTP/1.1" 200 OK
+magicbeans_local_django  | INFO:     172.18.0.1:44044 - "GET /static/admin/css/base.css HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:44060 - "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:44084 - "GET /static/admin/js/theme.js HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:44098 - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:44108 - "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 OK
+magicbeans_local_django  | INFO:     172.18.0.1:44070 - "GET /static/admin/css/forms.css HTTP/1.1" 200 OK
+magicbeans_local_django  | INFO:     172.18.0.1:44060 - "GET /static/admin/css/unusable_password_field.css HTTP/1.1" 200 OK
+magicbeans_local_django  | INFO:     172.18.0.1:44098 - "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:44084 - "GET /static/admin/css/responsive.css HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:44070 - "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 OK
+magicbeans_local_django  | INFO:     172.18.0.1:44108 - "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 OK
+magicbeans_local_django  | INFO:     172.18.0.1:44044 - "GET /admin/jsi18n/ HTTP/1.1" 200 OK
+magicbeans_local_django  | INFO:     172.18.0.1:44060 - "GET /static/admin/js/core.js HTTP/1.1" 200 OK
+magicbeans_local_django  | INFO:     172.18.0.1:44098 - "GET /static/admin/js/actions.js HTTP/1.1" 200 OK
+magicbeans_local_django  | INFO:     172.18.0.1:44084 - "GET /static/admin/js/urlify.js HTTP/1.1" 200 OK
+magicbeans_local_django  | INFO:     172.18.0.1:44060 - "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 OK
+magicbeans_local_django  | INFO:     172.18.0.1:44070 - "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 OK
+magicbeans_local_django  | INFO:     172.18.0.1:44108 - "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 OK
+magicbeans_local_django  | INFO:     172.18.0.1:44044 - "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:44084 - "GET /static/admin/css/widgets.css HTTP/1.1" 200 OK
+magicbeans_local_django  | INFO:     172.18.0.1:44070 - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:44084 - "GET /static/admin/js/change_form.js HTTP/1.1" 200 OK
+magicbeans_local_django  | INFO:     172.18.0.1:44084 - "GET /static/admin/js/unusable_password_field.js HTTP/1.1" 200 OK
+magicbeans_local_django  | INFO:     172.18.0.1:44084 - "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:44084 - "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | WARNING:  WatchFiles detected changes in 'catalog/models.py'. Reloading...
+magicbeans_local_django  | INFO:     Shutting down
+magicbeans_local_django  | INFO:     Finished server process [23]
+magicbeans_local_django  | INFO:     Started server process [356]
+magicbeans_local_django  | INFO:     Waiting for application startup.
+magicbeans_local_django  | INFO:     ASGI 'lifespan' protocol appears unsupported.
+magicbeans_local_django  | INFO:     Application startup complete.
+magicbeans_local_django  | WARNING:  WatchFiles detected changes in 'config/settings/local.py'. Reloading...
+magicbeans_local_django  | INFO:     Shutting down
+magicbeans_local_django  | INFO:     Finished server process [356]
+magicbeans_local_django  | Process SpawnProcess-3:
+magicbeans_local_django  | Traceback (most recent call last):
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+magicbeans_local_django  |     self.run()
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/multiprocessing/process.py", line 108, in run
+magicbeans_local_django  |     self._target(*self._args, **self._kwargs)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+magicbeans_local_django  |     target(sockets=sockets)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/server.py", line 66, in run
+magicbeans_local_django  |     return asyncio.run(self.serve(sockets=sockets))
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/asyncio/runners.py", line 195, in run
+magicbeans_local_django  |     return runner.run(main)
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/asyncio/runners.py", line 118, in run
+magicbeans_local_django  |     return self._loop.run_until_complete(task)
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/server.py", line 70, in serve
+magicbeans_local_django  |     await self._serve(sockets)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/server.py", line 77, in _serve
+magicbeans_local_django  |     config.load()
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/config.py", line 435, in load
+magicbeans_local_django  |     self.loaded_app = import_from_string(self.app)
+magicbeans_local_django  |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+magicbeans_local_django  |     module = importlib.import_module(module_str)
+magicbeans_local_django  |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/importlib/__init__.py", line 90, in import_module
+magicbeans_local_django  |     return _bootstrap._gcd_import(name[level:], package, level)
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+magicbeans_local_django  |   File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+magicbeans_local_django  |   File "/app/config/asgi.py", line 26, in <module>
+magicbeans_local_django  |     django_application = get_asgi_application()
+magicbeans_local_django  |                          ^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/core/asgi.py", line 12, in get_asgi_application
+magicbeans_local_django  |     django.setup(set_prefix=False)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/__init__.py", line 19, in setup
+magicbeans_local_django  |     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+magicbeans_local_django  |                       ^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/conf/__init__.py", line 81, in __getattr__
+magicbeans_local_django  |     self._setup(name)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/conf/__init__.py", line 68, in _setup
+magicbeans_local_django  |     self._wrapped = Settings(settings_module)
+magicbeans_local_django  |                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/conf/__init__.py", line 166, in __init__
+magicbeans_local_django  |     mod = importlib.import_module(self.SETTINGS_MODULE)
+magicbeans_local_django  |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/importlib/__init__.py", line 90, in import_module
+magicbeans_local_django  |     return _bootstrap._gcd_import(name[level:], package, level)
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+magicbeans_local_django  |   File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+magicbeans_local_django  |   File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+magicbeans_local_django  |   File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+magicbeans_local_django  |   File "/app/config/settings/local.py", line 17
+magicbeans_local_django  |     'catalog',
+magicbeans_local_django  | IndentationError: unexpected indent
+magicbeans_local_django  | WARNING:  WatchFiles detected changes in 'config/settings/local (1).py'. Reloading...
+magicbeans_local_django  | Process SpawnProcess-4:
+magicbeans_local_django  | Traceback (most recent call last):
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+magicbeans_local_django  |     self.run()
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/multiprocessing/process.py", line 108, in run
+magicbeans_local_django  |     self._target(*self._args, **self._kwargs)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+magicbeans_local_django  |     target(sockets=sockets)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/server.py", line 66, in run
+magicbeans_local_django  |     return asyncio.run(self.serve(sockets=sockets))
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/asyncio/runners.py", line 195, in run
+magicbeans_local_django  |     return runner.run(main)
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/asyncio/runners.py", line 118, in run
+magicbeans_local_django  |     return self._loop.run_until_complete(task)
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/server.py", line 70, in serve
+magicbeans_local_django  |     await self._serve(sockets)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/server.py", line 77, in _serve
+magicbeans_local_django  |     config.load()
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/config.py", line 435, in load
+magicbeans_local_django  |     self.loaded_app = import_from_string(self.app)
+magicbeans_local_django  |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+magicbeans_local_django  |     module = importlib.import_module(module_str)
+magicbeans_local_django  |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/importlib/__init__.py", line 90, in import_module
+magicbeans_local_django  |     return _bootstrap._gcd_import(name[level:], package, level)
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+magicbeans_local_django  |   File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+magicbeans_local_django  |   File "/app/config/asgi.py", line 26, in <module>
+magicbeans_local_django  |     django_application = get_asgi_application()
+magicbeans_local_django  |                          ^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/core/asgi.py", line 12, in get_asgi_application
+magicbeans_local_django  |     django.setup(set_prefix=False)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/__init__.py", line 19, in setup
+magicbeans_local_django  |     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+magicbeans_local_django  |                       ^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/conf/__init__.py", line 81, in __getattr__
+magicbeans_local_django  |     self._setup(name)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/conf/__init__.py", line 68, in _setup
+magicbeans_local_django  |     self._wrapped = Settings(settings_module)
+magicbeans_local_django  |                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/conf/__init__.py", line 166, in __init__
+magicbeans_local_django  |     mod = importlib.import_module(self.SETTINGS_MODULE)
+magicbeans_local_django  |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/importlib/__init__.py", line 90, in import_module
+magicbeans_local_django  |     return _bootstrap._gcd_import(name[level:], package, level)
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+magicbeans_local_django  |   File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+magicbeans_local_django  |   File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+magicbeans_local_django  |   File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+magicbeans_local_django  |   File "/app/config/settings/local.py", line 17
+magicbeans_local_django  |     'catalog',
+magicbeans_local_django  | IndentationError: unexpected indent
+magicbeans_local_django  | WARNING:  WatchFiles detected changes in 'config/settings/local.py'. Reloading...
+magicbeans_local_django  | Process SpawnProcess-5:
+magicbeans_local_django  | Traceback (most recent call last):
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+magicbeans_local_django  |     self.run()
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/multiprocessing/process.py", line 108, in run
+magicbeans_local_django  |     self._target(*self._args, **self._kwargs)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+magicbeans_local_django  |     target(sockets=sockets)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/server.py", line 66, in run
+magicbeans_local_django  |     return asyncio.run(self.serve(sockets=sockets))
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/asyncio/runners.py", line 195, in run
+magicbeans_local_django  |     return runner.run(main)
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/asyncio/runners.py", line 118, in run
+magicbeans_local_django  |     return self._loop.run_until_complete(task)
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/server.py", line 70, in serve
+magicbeans_local_django  |     await self._serve(sockets)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/server.py", line 77, in _serve
+magicbeans_local_django  |     config.load()
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/config.py", line 435, in load
+magicbeans_local_django  |     self.loaded_app = import_from_string(self.app)
+magicbeans_local_django  |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/importer.py", line 22, in import_from_string
+magicbeans_local_django  |     raise exc from None
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+magicbeans_local_django  |     module = importlib.import_module(module_str)
+magicbeans_local_django  |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/importlib/__init__.py", line 90, in import_module
+magicbeans_local_django  |     return _bootstrap._gcd_import(name[level:], package, level)
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+magicbeans_local_django  |   File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+magicbeans_local_django  |   File "/app/config/asgi.py", line 26, in <module>
+magicbeans_local_django  |     django_application = get_asgi_application()
+magicbeans_local_django  |                          ^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/core/asgi.py", line 12, in get_asgi_application
+magicbeans_local_django  |     django.setup(set_prefix=False)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/__init__.py", line 19, in setup
+magicbeans_local_django  |     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+magicbeans_local_django  |                       ^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/conf/__init__.py", line 81, in __getattr__
+magicbeans_local_django  |     self._setup(name)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/conf/__init__.py", line 68, in _setup
+magicbeans_local_django  |     self._wrapped = Settings(settings_module)
+magicbeans_local_django  |                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/conf/__init__.py", line 166, in __init__
+magicbeans_local_django  |     mod = importlib.import_module(self.SETTINGS_MODULE)
+magicbeans_local_django  |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/importlib/__init__.py", line 90, in import_module
+magicbeans_local_django  |     return _bootstrap._gcd_import(name[level:], package, level)
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+magicbeans_local_django  | ModuleNotFoundError: No module named 'config.settings.local'
+magicbeans_local_django  | WARNING:  WatchFiles detected changes in 'config/settings/local.py'. Reloading...
+magicbeans_local_django  | WARNING:  WatchFiles detected changes in 'config/settings/local (1).py'. Reloading...
+magicbeans_local_django  | Process SpawnProcess-7:
+magicbeans_local_django  | Traceback (most recent call last):
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+magicbeans_local_django  |     self.run()
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/multiprocessing/process.py", line 108, in run
+magicbeans_local_django  |     self._target(*self._args, **self._kwargs)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+magicbeans_local_django  |     target(sockets=sockets)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/server.py", line 66, in run
+magicbeans_local_django  |     return asyncio.run(self.serve(sockets=sockets))
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/asyncio/runners.py", line 195, in run
+magicbeans_local_django  |     return runner.run(main)
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/asyncio/runners.py", line 118, in run
+magicbeans_local_django  |     return self._loop.run_until_complete(task)
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/server.py", line 70, in serve
+magicbeans_local_django  |     await self._serve(sockets)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/server.py", line 77, in _serve
+magicbeans_local_django  |     config.load()
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/config.py", line 435, in load
+magicbeans_local_django  |     self.loaded_app = import_from_string(self.app)
+magicbeans_local_django  |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+magicbeans_local_django  |     module = importlib.import_module(module_str)
+magicbeans_local_django  |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/importlib/__init__.py", line 90, in import_module
+magicbeans_local_django  |     return _bootstrap._gcd_import(name[level:], package, level)
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+magicbeans_local_django  |   File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+magicbeans_local_django  |   File "/app/config/asgi.py", line 26, in <module>
+magicbeans_local_django  |     django_application = get_asgi_application()
+magicbeans_local_django  |                          ^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/core/asgi.py", line 12, in get_asgi_application
+magicbeans_local_django  |     django.setup(set_prefix=False)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/__init__.py", line 19, in setup
+magicbeans_local_django  |     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+magicbeans_local_django  |                       ^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/conf/__init__.py", line 81, in __getattr__
+magicbeans_local_django  |     self._setup(name)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/conf/__init__.py", line 68, in _setup
+magicbeans_local_django  |     self._wrapped = Settings(settings_module)
+magicbeans_local_django  |                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/conf/__init__.py", line 166, in __init__
+magicbeans_local_django  |     mod = importlib.import_module(self.SETTINGS_MODULE)
+magicbeans_local_django  |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/importlib/__init__.py", line 90, in import_module
+magicbeans_local_django  |     return _bootstrap._gcd_import(name[level:], package, level)
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+magicbeans_local_django  |   File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+magicbeans_local_django  |   File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+magicbeans_local_django  |   File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+magicbeans_local_django  |   File "/app/config/settings/local.py", line 40
+magicbeans_local_django  |     'catalog',
+magicbeans_local_django  | IndentationError: unexpected indent
+magicbeans_local_django  | WARNING:  WatchFiles detected changes in 'config/settings/local (2).py'. Reloading...
+magicbeans_local_django  | Process SpawnProcess-8:
+magicbeans_local_django  | Traceback (most recent call last):
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+magicbeans_local_django  |     self.run()
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/multiprocessing/process.py", line 108, in run
+magicbeans_local_django  |     self._target(*self._args, **self._kwargs)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+magicbeans_local_django  |     target(sockets=sockets)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/server.py", line 66, in run
+magicbeans_local_django  |     return asyncio.run(self.serve(sockets=sockets))
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/asyncio/runners.py", line 195, in run
+magicbeans_local_django  |     return runner.run(main)
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/asyncio/runners.py", line 118, in run
+magicbeans_local_django  |     return self._loop.run_until_complete(task)
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/server.py", line 70, in serve
+magicbeans_local_django  |     await self._serve(sockets)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/server.py", line 77, in _serve
+magicbeans_local_django  |     config.load()
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/config.py", line 435, in load
+magicbeans_local_django  |     self.loaded_app = import_from_string(self.app)
+magicbeans_local_django  |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+magicbeans_local_django  |     module = importlib.import_module(module_str)
+magicbeans_local_django  |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/importlib/__init__.py", line 90, in import_module
+magicbeans_local_django  |     return _bootstrap._gcd_import(name[level:], package, level)
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+magicbeans_local_django  |   File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+magicbeans_local_django  |   File "/app/config/asgi.py", line 26, in <module>
+magicbeans_local_django  |     django_application = get_asgi_application()
+magicbeans_local_django  |                          ^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/core/asgi.py", line 12, in get_asgi_application
+magicbeans_local_django  |     django.setup(set_prefix=False)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/__init__.py", line 19, in setup
+magicbeans_local_django  |     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+magicbeans_local_django  |                       ^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/conf/__init__.py", line 81, in __getattr__
+magicbeans_local_django  |     self._setup(name)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/conf/__init__.py", line 68, in _setup
+magicbeans_local_django  |     self._wrapped = Settings(settings_module)
+magicbeans_local_django  |                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/conf/__init__.py", line 166, in __init__
+magicbeans_local_django  |     mod = importlib.import_module(self.SETTINGS_MODULE)
+magicbeans_local_django  |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/importlib/__init__.py", line 90, in import_module
+magicbeans_local_django  |     return _bootstrap._gcd_import(name[level:], package, level)
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+magicbeans_local_django  |   File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+magicbeans_local_django  |   File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+magicbeans_local_django  |   File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+magicbeans_local_django  |   File "/app/config/settings/local.py", line 40
+magicbeans_local_django  |     'catalog',
+magicbeans_local_django  | IndentationError: unexpected indent
+magicbeans_local_django  | WARNING:  WatchFiles detected changes in 'config/settings/local.py'. Reloading...
+magicbeans_local_django  | Process SpawnProcess-9:
+magicbeans_local_django  | Traceback (most recent call last):
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+magicbeans_local_django  |     self.run()
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/multiprocessing/process.py", line 108, in run
+magicbeans_local_django  |     self._target(*self._args, **self._kwargs)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+magicbeans_local_django  |     target(sockets=sockets)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/server.py", line 66, in run
+magicbeans_local_django  |     return asyncio.run(self.serve(sockets=sockets))
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/asyncio/runners.py", line 195, in run
+magicbeans_local_django  |     return runner.run(main)
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/asyncio/runners.py", line 118, in run
+magicbeans_local_django  |     return self._loop.run_until_complete(task)
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/server.py", line 70, in serve
+magicbeans_local_django  |     await self._serve(sockets)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/server.py", line 77, in _serve
+magicbeans_local_django  |     config.load()
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/config.py", line 435, in load
+magicbeans_local_django  |     self.loaded_app = import_from_string(self.app)
+magicbeans_local_django  |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/importer.py", line 22, in import_from_string
+magicbeans_local_django  |     raise exc from None
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+magicbeans_local_django  |     module = importlib.import_module(module_str)
+magicbeans_local_django  |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/importlib/__init__.py", line 90, in import_module
+magicbeans_local_django  |     return _bootstrap._gcd_import(name[level:], package, level)
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+magicbeans_local_django  |   File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+magicbeans_local_django  |   File "/app/config/asgi.py", line 26, in <module>
+magicbeans_local_django  |     django_application = get_asgi_application()
+magicbeans_local_django  |                          ^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/core/asgi.py", line 12, in get_asgi_application
+magicbeans_local_django  |     django.setup(set_prefix=False)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/__init__.py", line 19, in setup
+magicbeans_local_django  |     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+magicbeans_local_django  |                       ^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/conf/__init__.py", line 81, in __getattr__
+magicbeans_local_django  |     self._setup(name)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/conf/__init__.py", line 68, in _setup
+magicbeans_local_django  |     self._wrapped = Settings(settings_module)
+magicbeans_local_django  |                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/conf/__init__.py", line 166, in __init__
+magicbeans_local_django  |     mod = importlib.import_module(self.SETTINGS_MODULE)
+magicbeans_local_django  |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/importlib/__init__.py", line 90, in import_module
+magicbeans_local_django  |     return _bootstrap._gcd_import(name[level:], package, level)
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+magicbeans_local_django  | ModuleNotFoundError: No module named 'config.settings.local'
+magicbeans_local_django  | WARNING:  WatchFiles detected changes in 'config/settings/local.py'. Reloading...
+magicbeans_local_django  | WARNING:  WatchFiles detected changes in 'config/settings/local (2).py'. Reloading...
+magicbeans_local_django  | Process SpawnProcess-11:
+magicbeans_local_django  | Traceback (most recent call last):
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+magicbeans_local_django  |     self.run()
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/multiprocessing/process.py", line 108, in run
+magicbeans_local_django  |     self._target(*self._args, **self._kwargs)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+magicbeans_local_django  |     target(sockets=sockets)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/server.py", line 66, in run
+magicbeans_local_django  |     return asyncio.run(self.serve(sockets=sockets))
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/asyncio/runners.py", line 195, in run
+magicbeans_local_django  |     return runner.run(main)
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/asyncio/runners.py", line 118, in run
+magicbeans_local_django  |     return self._loop.run_until_complete(task)
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/server.py", line 70, in serve
+magicbeans_local_django  |     await self._serve(sockets)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/server.py", line 77, in _serve
+magicbeans_local_django  |     config.load()
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/config.py", line 435, in load
+magicbeans_local_django  |     self.loaded_app = import_from_string(self.app)
+magicbeans_local_django  |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+magicbeans_local_django  |     module = importlib.import_module(module_str)
+magicbeans_local_django  |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/importlib/__init__.py", line 90, in import_module
+magicbeans_local_django  |     return _bootstrap._gcd_import(name[level:], package, level)
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+magicbeans_local_django  |   File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+magicbeans_local_django  |   File "/app/config/asgi.py", line 26, in <module>
+magicbeans_local_django  |     django_application = get_asgi_application()
+magicbeans_local_django  |                          ^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/core/asgi.py", line 12, in get_asgi_application
+magicbeans_local_django  |     django.setup(set_prefix=False)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/__init__.py", line 19, in setup
+magicbeans_local_django  |     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+magicbeans_local_django  |                       ^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/conf/__init__.py", line 81, in __getattr__
+magicbeans_local_django  |     self._setup(name)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/conf/__init__.py", line 68, in _setup
+magicbeans_local_django  |     self._wrapped = Settings(settings_module)
+magicbeans_local_django  |                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/conf/__init__.py", line 166, in __init__
+magicbeans_local_django  |     mod = importlib.import_module(self.SETTINGS_MODULE)
+magicbeans_local_django  |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/importlib/__init__.py", line 90, in import_module
+magicbeans_local_django  |     return _bootstrap._gcd_import(name[level:], package, level)
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+magicbeans_local_django  |   File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+magicbeans_local_django  |   File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+magicbeans_local_django  |   File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+magicbeans_local_django  |   File "/app/config/settings/local.py", line 40
+magicbeans_local_django  |     'catalog',
+magicbeans_local_django  | IndentationError: unexpected indent
+magicbeans_local_django  | WARNING:  WatchFiles detected changes in 'config/settings/base.py'. Reloading...
+magicbeans_local_django  | Process SpawnProcess-12:
+magicbeans_local_django  | Traceback (most recent call last):
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+magicbeans_local_django  |     self.run()
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/multiprocessing/process.py", line 108, in run
+magicbeans_local_django  |     self._target(*self._args, **self._kwargs)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+magicbeans_local_django  |     target(sockets=sockets)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/server.py", line 66, in run
+magicbeans_local_django  |     return asyncio.run(self.serve(sockets=sockets))
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/asyncio/runners.py", line 195, in run
+magicbeans_local_django  |     return runner.run(main)
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/asyncio/runners.py", line 118, in run
+magicbeans_local_django  |     return self._loop.run_until_complete(task)
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/server.py", line 70, in serve
+magicbeans_local_django  |     await self._serve(sockets)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/server.py", line 77, in _serve
+magicbeans_local_django  |     config.load()
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/config.py", line 435, in load
+magicbeans_local_django  |     self.loaded_app = import_from_string(self.app)
+magicbeans_local_django  |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+magicbeans_local_django  |     module = importlib.import_module(module_str)
+magicbeans_local_django  |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/importlib/__init__.py", line 90, in import_module
+magicbeans_local_django  |     return _bootstrap._gcd_import(name[level:], package, level)
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+magicbeans_local_django  |   File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+magicbeans_local_django  |   File "/app/config/asgi.py", line 26, in <module>
+magicbeans_local_django  |     django_application = get_asgi_application()
+magicbeans_local_django  |                          ^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/core/asgi.py", line 12, in get_asgi_application
+magicbeans_local_django  |     django.setup(set_prefix=False)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/__init__.py", line 19, in setup
+magicbeans_local_django  |     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+magicbeans_local_django  |                       ^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/conf/__init__.py", line 81, in __getattr__
+magicbeans_local_django  |     self._setup(name)
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/conf/__init__.py", line 68, in _setup
+magicbeans_local_django  |     self._wrapped = Settings(settings_module)
+magicbeans_local_django  |                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/site-packages/django/conf/__init__.py", line 166, in __init__
+magicbeans_local_django  |     mod = importlib.import_module(self.SETTINGS_MODULE)
+magicbeans_local_django  |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "/usr/local/lib/python3.12/importlib/__init__.py", line 90, in import_module
+magicbeans_local_django  |     return _bootstrap._gcd_import(name[level:], package, level)
+magicbeans_local_django  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+magicbeans_local_django  |   File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+magicbeans_local_django  |   File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+magicbeans_local_django  |   File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+magicbeans_local_django  |   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+magicbeans_local_django  |   File "/app/config/settings/local.py", line 40
+magicbeans_local_django  |     'catalog',
+magicbeans_local_django  | IndentationError: unexpected indent
+magicbeans_local_django  | WARNING:  WatchFiles detected changes in 'config/settings/local.py'. Reloading...
+magicbeans_local_django  | INFO:     Started server process [424]
+magicbeans_local_django  | INFO:     Waiting for application startup.
+magicbeans_local_django  | INFO:     ASGI 'lifespan' protocol appears unsupported.
+magicbeans_local_django  | INFO:     Application startup complete.
+magicbeans_local_django  | WARNING:  WatchFiles detected changes in 'catalog/__init__.py', 'catalog/apps.py', 'catalog/migrations/__init__.py', 'catalog/admin.py'. Reloading...
+magicbeans_local_django  | INFO:     Shutting down
+magicbeans_local_django  | INFO:     Finished server process [424]
+magicbeans_local_django  | INFO:     Started server process [438]
+magicbeans_local_django  | INFO:     Waiting for application startup.
+magicbeans_local_django  | INFO:     ASGI 'lifespan' protocol appears unsupported.
+magicbeans_local_django  | INFO:     Application startup complete.
+magicbeans_local_django  | WARNING:  WatchFiles detected changes in 'catalog/apps.py', 'catalog/__init__.py', 'catalog/migrations/__init__.py', 'catalog/admin.py'. Reloading...
+magicbeans_local_django  | INFO:     Shutting down
+magicbeans_local_django  | INFO:     Finished server process [438]
+magicbeans_local_django  | INFO:     Started server process [440]
+magicbeans_local_django  | INFO:     Waiting for application startup.
+magicbeans_local_django  | INFO:     ASGI 'lifespan' protocol appears unsupported.
+magicbeans_local_django  | INFO:     Application startup complete.
+magicbeans_local_django  | WARNING:  WatchFiles detected changes in 'config/settings/base.py'. Reloading...
+magicbeans_local_django  | INFO:     Shutting down
+magicbeans_local_django  | INFO:     Finished server process [440]
+magicbeans_local_django  | INFO:     Started server process [460]
+magicbeans_local_django  | INFO:     Waiting for application startup.
+magicbeans_local_django  | INFO:     ASGI 'lifespan' protocol appears unsupported.
+magicbeans_local_django  | INFO:     Application startup complete.
+magicbeans_local_django  | WARNING:  WatchFiles detected changes in 'catalog/migrations/0001_initial.py'. Reloading...
+magicbeans_local_django  | INFO:     Shutting down
+magicbeans_local_django  | INFO:     Finished server process [460]
+magicbeans_local_django  | INFO:     Started server process [468]
+magicbeans_local_django  | INFO:     Waiting for application startup.
+magicbeans_local_django  | INFO:     ASGI 'lifespan' protocol appears unsupported.
+magicbeans_local_django  | INFO:     Application startup complete.
+magicbeans_local_django  | INFO:     172.18.0.1:52476 - "GET /admin/ HTTP/1.1" 200 OK
+magicbeans_local_django  | INFO:     172.18.0.1:52476 - "GET /static/admin/css/base.css HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | /usr/local/lib/python3.12/site-packages/django/http/response.py:517: Warning: StreamingHttpResponse must consume synchronous iterators in order to serve them asynchronously. Use an asynchronous iterator instead.
+magicbeans_local_django  |   warnings.warn(
+magicbeans_local_django  | INFO:     172.18.0.1:52476 - "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:52490 - "GET /static/admin/css/dashboard.css HTTP/1.1" 200 OK
+magicbeans_local_django  | INFO:     172.18.0.1:52504 - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:52524 - "GET /static/admin/js/theme.js HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:52510 - "GET /static/admin/css/responsive.css HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:52514 - "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:52504 - "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:52510 - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:52504 - "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:52514 - "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 Not Modified
+magicbeans_local_django  | INFO:     172.18.0.1:52514 - "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 OK
+magicbeans_local_django  | INFO:     172.18.0.1:52510 - "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 OK
+magicbeans_local_django  | WARNING:  WatchFiles detected changes in 'catalog/admin (9).py'. Reloading...
+magicbeans_local_django  | INFO:     Shutting down
+magicbeans_local_django  | INFO:     Finished server process [468]
+magicbeans_local_django  | WARNING:  WatchFiles detected changes in 'catalog/admin.py'. Reloading...
+magicbeans_local_django  | INFO:     Started server process [490]
+magicbeans_local_django  | INFO:     Waiting for application startup.
+magicbeans_local_django  | INFO:     ASGI 'lifespan' protocol appears unsupported.
+magicbeans_local_django  | INFO:     Application startup complete.
+magicbeans_local_django  | INFO:     Started server process [492]
+magicbeans_local_django  | INFO:     Waiting for application startup.
+magicbeans_local_django  | INFO:     ASGI 'lifespan' protocol appears unsupported.
+magicbeans_local_django  | INFO:     Application startup complete.
+magicbeans_local_django  | WARNING:  WatchFiles detected changes in 'catalog/admin (9).py', 'catalog/admin.py'. Reloading...
+magicbeans_local_django  | INFO:     Shutting down
+magicbeans_local_django  | INFO:     Finished server process [492]
+magicbeans_local_django  | INFO:     Started server process [494]
+magicbeans_local_django  | INFO:     Waiting for application startup.
+magicbeans_local_django  | INFO:     ASGI 'lifespan' protocol appears unsupported.
+magicbeans_local_django  | INFO:     Application startup complete.
+magicbeans_local_django  | INFO:     Shutting down
+magicbeans_local_django  | INFO:     Finished server process [494]
+magicbeans_local_django  | INFO:     Stopping reloader process [1]
+magicbeans_local_django  | wait-for-it: waiting 30 seconds for postgres:5432
+magicbeans_local_django  | wait-for-it: postgres:5432 is available after 0 seconds
+magicbeans_local_django  | PostgreSQL is available
+magicbeans_local_django  | SystemCheckError: System check identified some issues:
+magicbeans_local_django  |
+magicbeans_local_django  | ERRORS:
+magicbeans_local_django  | <class 'catalog.admin.ProducerAdmin'>: (admin.E108) The value of 'list_display[1]' refers to 'is_visible', which is not a callable or attribute of 'ProducerAdmin', or an attribute, method, or field on 'catalog.Producer'.
+magicbeans_local_django  | <class 'catalog.admin.ProductAdmin'>: (admin.E108) The value of 'list_display[3]' refers to 'is_visible', which is not a callable or attribute of 'ProductAdmin', or an attribute, method, or field on 'catalog.Product'.
+magicbeans_local_django  | <class 'catalog.admin.ProductAdmin'>: (admin.E116) The value of 'list_filter[2]' refers to 'is_visible', which does not refer to a Field.
